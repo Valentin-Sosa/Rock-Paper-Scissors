@@ -1,5 +1,6 @@
-
-game();
+const rockButton = document.querySelector("#rock-button");
+const paperButton = document.querySelector("#paper-button");
+const scissorsButton = document.querySelector("#scissors-button");
 
 function getComputerChoice()
 {
@@ -41,14 +42,16 @@ function playRound(playerSelection, computerSelection)
 }
 
 function game()
-{
-    
+{   
     let computerScore = 0;
     let playerScore = 0;
 
     while(playerScore < 5 && computerScore < 5)
     {
-        let playerSelection = prompt("Choice Rock Paper or Scissors");
+        let playerSelection = "";
+        rockButton.addEventListener("click", () => player="Rock");
+        paperButton.addEventListener("click", () => player="Paper");
+        scissorsButton.addEventListener("click", () => player="Scissors");
         let computerSelection = getComputerChoice();    
         let roundResult = playRound(playerSelection.toUpperCase(), computerSelection.toUpperCase());
 
