@@ -11,24 +11,28 @@
     
 </head>
 <body>
-    
-    <h1>Rock Paper Scissors</h1>
-    <section class="info">
-        <div class="results-info">Choose Your Weapon</div>
-        <div class="player-info">
-            Player:
-            <div class="score player"></div>
-        </div>
-        <div class="computer-info">
-            Computer:
-            <div class="score computer"></div>
-        </div>
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        <section class="info">
+            <div class="results-info">Choose Your Weapon</div>
+            <div class="player-info">
+                Player:
+                <div class="score player">0</div>
+            </div>
+            <div class="computer-info">
+                Computer:
+                <div class="score computer">0</div>
+            </div>
+        </section>
+        <section class="buttons">
+            <button id="rock-button"><img src="./images/rock.png" alt="rock"></button>
+            <button id="paper-button"><img src="./images/paper.png" alt="paper"></button>
+            <button id="scissors-button"><img src="./images/scissors.png" alt="scissors"></button>
+        </section>
+    </main>
+    <section class="reset-menu">
         <div class="winner"></div>
-    </section>
-    <section class="buttons">
-        <button id="rock-button"><img src="./images/rock.png" alt="rock"></button>
-        <button id="paper-button"><img src="./images/paper.png" alt="paper"></button>
-        <button id="scissors-button"><img src="./images/scissors.png" alt="scissors"></button>
+        <button class="play-again">Play again!</button>
     </section>
 
 </body>
